@@ -20,12 +20,17 @@ jobs:
       # パッケージのインストール
       - name: Install dependencies
         run: yarn --frozen-lockfile
+      # テスト
+      #
       # ビルド
       - name: Build
         run: yarn build
+
+  deploy:
+      needs: [build]
       # さくらレンタルサーバにデプロイ
       - name: Sakura FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@3.0.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
