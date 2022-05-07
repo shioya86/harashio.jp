@@ -1,4 +1,4 @@
-name: FTP upload
+name: Sakura Deploy
 on:
   push:
     branches:
