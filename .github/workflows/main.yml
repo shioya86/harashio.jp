@@ -31,7 +31,7 @@ jobs:
     steps:
       # さくらレンタルサーバにデプロイ
       - name: Sakura FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@3.0.0
+        uses: SamKirkland/FTP-Deploy-Action@.0.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
