@@ -20,8 +20,6 @@ jobs:
       # パッケージのインストール
       - name: Install dependencies
         run: yarn --frozen-lockfile
-      # テスト
-      #
       # ビルド
       - name: Build
         run: yarn build
