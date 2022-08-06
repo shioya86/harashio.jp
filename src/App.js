@@ -112,7 +112,6 @@ const App = (props) => {
         <Profile />
         <Qualifications />
         <History />
-        <Works />
       </Box>
     </Box>
   );
