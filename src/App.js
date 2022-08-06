@@ -39,9 +39,9 @@ const App = (props) => {
       <Toolbar />
       <Divider />
       <List>
-        {['Profile', 'Qualifications', 'Activities', 'Works'].map((text) => (
+        {['Profile', 'Links' , 'Qualifications', 'Activities', 'Works'].map((text) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton>
+            <ListItemButton href={"#" + text}>
               <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>

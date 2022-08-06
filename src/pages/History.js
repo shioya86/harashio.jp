@@ -15,10 +15,10 @@ function History() {
   ]
 
   const drawer =  (contents.map((e) => (
-          <Event interval={e.date} title={e.title} subtitle={e?.subtitle}>
-            {e.body}
-          </Event>
-        ))
+      <Event interval={e.date} title={e.title} subtitle={e?.subtitle}>
+        {e.body}
+      </Event>
+    ))
   );
 
   return (

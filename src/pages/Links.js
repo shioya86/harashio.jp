@@ -5,7 +5,10 @@ import Grid from "@material-ui/core/Grid";
 import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack';
 import { FaGithub, FaTwitter, FaBookOpen } from "react-icons/fa"
-
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
 import { GiHorseHead } from "react-icons/gi"
 import { Typography } from "@material-ui/core";
 
@@ -23,57 +26,25 @@ const styles = {
 }
 
 function Links() {
-  const links = (
-    <Grid container rowSpacing={5} columnSpacing={5} alignItems="center" justify="center">
-      <Grid item xs={6}>
-        <Button
-          variant="outlined"
-          color="primary"
-          href="https://github.com/shioyarare"
-          style={styles.button}
-          >
-          <FaGithub size={20}/> Github
-        </Button>
-      </Grid>
-      <Grid item xs={6}>
-        <Button
-          variant="outlined"
-          color="primary"
-          href="https://twitter.com/shioya_net"
-          style={styles.button}
-          >
-          <FaTwitter size={20}/> Twitter
-        </Button>
-      </Grid>
-
-      <Grid item xs={6}>
-        <Button
-          variant="outlined"
-          color="primary"
-          href="https://blog.shioyarare.com"
-          style={styles.button}
-          >
-          <FaBookOpen size={20}/> Blog
-        </Button>
-      </Grid>
-
-      <Grid item xs={6}>
-        <Button
-          variant="outlined"
-          color="primary"
-          href="https://atcoder.jp/users/shioya"
-          style={styles.button}
-          >
-          <GiHorseHead size={20}/> AtCoder
-        </Button>
-      </Grid>
-    </Grid>
-  );
+  const links = [
+    {name: "github", link: "https://github.com/shioyarare"},
+    {name: "twitter", link: "https://twitter.com/shioya_net"},
+    {name: "blog", link: "https://blog.shioyarare.com"},
+    {name: "atcoder", link: "https://atcoder.jp/users/shioya"}
+  ];
 
   return (
     <>
       <Title name="Links" />
-      {links}
+      {
+        links.map( (e) => (
+          <ListItem>
+              <ListItemButton href={e.link}>
+                <ListItemText primary={e.name} secondary={e.link} />
+              </ListItemButton>
+          </ListItem>
+        ))
+      }
     </>
   );
 }
