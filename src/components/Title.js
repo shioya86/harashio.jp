@@ -6,7 +6,7 @@ const style =  {
   },
   header: {
     paddingTop: 60,
-    borderBottom: "double 3px rgba(178, 0, 0, 0.3"
+    borderBottom: "double 3px rgba(25, 118, 210, 0.3"
   }
 
 }
