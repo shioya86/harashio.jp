@@ -1,5 +1,7 @@
 import Title from "../components/Title";
+import Box from '@mui/material/Box';
 
+import { Typography } from "@material-ui/core";
 const Profile = (props) => {
   const links = [
     {title: "GitHub", link: "https://github.com/shioyarare"},
@@ -7,7 +9,9 @@ const Profile = (props) => {
     {title: "Twitter", link: "https://twitter.com/shioya_net"},
     {title: "AtCoder", link: "https://atcoder.jp/users/shioya"}
   ].map( (e) => (
-    <li> <a href={e.link}>{e.title}</a></li>
+    <ul>
+      <li> <a href={e.link}>{e.title}</a> </li>
+    </ul>
   ));
 
   return (
@@ -19,13 +23,11 @@ const Profile = (props) => {
         <li> M1, 九州工業大学 情報創成工学科 在学中</li>
         <li> admin[at]sp.harashio.jp</li>
       </ul>
-      <p>
-        こんにちは〜
-      </p>
+      <Typography paragraph>
+        こんにちは
+      </Typography>
 
-      <ul>
-        {links}
-      </ul>
+      {links}
     </div>
   );
 }
