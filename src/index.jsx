@@ -12,9 +12,22 @@ import Works from './pages/Works';
 import ResponsiveDrawer from './components/SideMenu';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const styles = {
+  footer: {
+    paddingTop: 10,
+    paddingRight: 40,
+    height: 80,
+    background: "black",
+    textAlign: "right",
+    color: "white",
+  }
+}
+
 root.render(
   <React.StrictMode>
     <App />
+    <footer style={styles.footer}> Copyright ©  harashio.jp </footer>
   </React.StrictMode>
 );
 
