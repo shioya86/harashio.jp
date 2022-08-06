@@ -1,16 +1,7 @@
 import Title from "../components/Title";
-import Box from '@mui/material/Box';
-import Icon from '@mui/material/Icon';
-import Grid from "@material-ui/core/Grid";
-import Button from '@mui/material/Button'
-import Stack from '@mui/material/Stack';
-import { FaGithub, FaTwitter, FaBookOpen } from "react-icons/fa"
-import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import { GiHorseHead } from "react-icons/gi"
-import { Typography } from "@material-ui/core";
 
 const styles = {
   stack: {
