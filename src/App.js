@@ -21,6 +21,7 @@ import Profile from './pages/Profile';
 import Qualifications from './pages/Qualifications';
 import History from './pages/History';
 import Works from './pages/Works';
+import Links from './pages/Links';
 import QueryString from 'qs';
 const drawerWidth = 240;
 
@@ -111,8 +112,10 @@ const App = (props) => {
       >
         <Toolbar />
         <Profile />
+        <Links />
         <Qualifications />
         <History />
+        <Works />
       </Box>
     </Box>
   );
