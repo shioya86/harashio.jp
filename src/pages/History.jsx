@@ -6,7 +6,7 @@ import { Timeline, Event } from 'react-trivial-timeline';
 function History() {
   const contents =  [
     {time: "6.2017", title: "宮崎ミライ Hack Days", body: "宮崎の観光をテーマにしたハッカソン"},
-    {time: "10.2017", title: "全国高専プログラミングコンテスト 第28回大島大会 参加", body: ""},
+    {time: "10.2017", title: "全国高専プログラミングコンテスト 第28回大島大会 参加", body: "C++ / OpenCVを用いたパズルソルバの開発"},
     {time: "1.2018", title: "第2回 RESASアプリコンテスト 参加", 
       subtitle: "宮崎地方創成シミュレーションゲーム 輝け☆ミライの観光大使", body: "優秀賞, ソフトバンクテクノロジー賞"},
     {time: "6.2019", title: "CTF ビギナーズ for 高専生", body: "Offensive Securityの基礎"},
