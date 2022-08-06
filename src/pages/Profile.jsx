@@ -13,6 +13,12 @@ function Profile() {
       <p>
         こんにちは〜
       </p>
+
+      <ul>
+        <li> GitHub </li>
+        <li> Blog </li>
+        <li> Twitter </li>
+      </ul>
     </div>
   );
 }
