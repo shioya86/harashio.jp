@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Box from '@mui/material/Box';
+
+import App from './App';
+import Profile from './pages/Profile';
+import History from './pages/History';
+import Qualifications from './pages/Qualifications';
+import Works from './pages/Works';
+import ResponsiveDrawer from './components/SideMenu';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
