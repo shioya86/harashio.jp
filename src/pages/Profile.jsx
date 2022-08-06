@@ -1,6 +1,15 @@
 import Title from "../components/Title";
 
-function Profile() {
+const Profile = (props) => {
+  const links = [
+    {title: "GitHub", link: "https://github.com/shioyarare"},
+    {title: "Blog", link: "https://blog.shioyarare.com"},
+    {title: "Twitter", link: "https://twitter.com/shioya_net"},
+    {title: "AtCoder", link: "https://atcoder.jp/users/shioya"}
+  ].map( (e) => (
+    <li> <a href={e.link}>{e.title}</a></li>
+  ));
+
   return (
     <div>
       <Title name={"プロフィール"}/>
@@ -15,9 +24,7 @@ function Profile() {
       </p>
 
       <ul>
-        <li> GitHub </li>
-        <li> Blog </li>
-        <li> Twitter </li>
+        {links}
       </ul>
     </div>
   );
