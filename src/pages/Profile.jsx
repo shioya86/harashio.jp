@@ -7,7 +7,8 @@ const Profile = (props) => {
     {title: "GitHub", link: "https://github.com/shioyarare"},
     {title: "Blog", link: "https://blog.shioyarare.com"},
     {title: "Twitter", link: "https://twitter.com/shioya_net"},
-    {title: "AtCoder", link: "https://atcoder.jp/users/shioya"}
+    {title: "instagram", link: "#"},
+    {title: "AtCoder", link: "https://atcoder.jp/users/shioya"},
   ].map( (e) => (
     <ul>
       <li> <a href={e.link}>{e.title}</a> </li>
@@ -16,10 +17,13 @@ const Profile = (props) => {
 
   return (
     <div>
-      <Title name={"プロフィール"}/>
+      <Title name={"Profile"}/>
+      <div align="center">
+        <p> shioya / 原 翔耶</p>
+        <p>Shoya HARA</p>
+      </div>
       <ul>
-        <li> 原翔耶 はら しょうや / Shoya HARA</li>
-        <li> 1999.8.16 宮崎生</li>
+        <li> 8.1999 宮崎県 都城市生</li>
         <li> M1, 九州工業大学 情報創成工学科 在学中</li>
         <li> admin[at]sp.harashio.jp</li>
       </ul>
