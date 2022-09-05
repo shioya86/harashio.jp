@@ -2,9 +2,15 @@ import Title from "../components/Title";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
+import Card from "@material-ui/core/Card";
 
-// これを使っている → https://github.com/tverdohleb/react-trivial-timeline
-// こっちも使えそう → https://codepen.io/viktorjs/pen/KQZYjo
+const styles = {
+  card: {
+    padding: 10,
+    boxShadow: "none"
+  }
+}
+
 function History() {
   const rows =  [
     {date: "6.2017", name: "宮崎ミライ Hack Days", body: "宮崎の観光をテーマにしたハッカソン"},
@@ -17,7 +23,7 @@ function History() {
   ]
 
   return (
-    <div>
+    <Card style={styles.card} >
       <Title name={"Activities"} />
       <List sx={{ witdh: '100%', maxWidth: 360, bgcolor: 'background.paper'}}>
         {
@@ -28,7 +34,7 @@ function History() {
           ))
         }
       </List>
-    </div>
+    </Card>
   );
 }
 

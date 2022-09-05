@@ -1,31 +1,37 @@
 import Title from "../components/Title";
-import BodyCard from "../components/BodyCard";
 import Grid from '@material-ui/core/Grid';
+import Card from "@material-ui/core/Card";
+import WorkContent from "../components/WorkContent";
+
+const styles = {
+  card: {
+    padding: 10,
+    boxShadow: "none"
+  }
+}
+
 function Works() {
+  const rows = [
+    {title: "プログラムA", body: "これはサンプルです。", link: "https://google.com"},
+    //{title: "プログラムB", body: "これはサンプルです。", link: "https://google.com"},
+  ];
   return (
-    <div>
+    <Card style={styles.card}>
       <Title name={"Works"}/>
       <Grid container spacing={2}>
-        <Grid item xs={4}>
-          <BodyCard 
-            title="プログラムA"
-            body="これはサンプルです。"
-            link="https://google.com" />
-        </Grid>
-        <Grid item xs={4}>
-          <BodyCard 
-            title="プログラムB"
-            body="これはサンプルです。"
-            link="https://google.com" />
-        </Grid>
-        <Grid item xs={4}>
-          <BodyCard 
-            title="プログラムC"
-            body="これはサンプルです。"
-            link="https://google.com" />
-        </Grid>
+        {
+          rows.map( (e) => (
+            <Grid item xs={4}>
+              <WorkContent 
+                title={e.title}
+                body={e.body}
+                link={e.link}
+                />
+            </Grid>
+          ))
+        }
       </Grid>
-    </div>
+    </Card>
   );
 }
 

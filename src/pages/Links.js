@@ -2,17 +2,15 @@ import Title from "../components/Title";
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
+import Card from "@material-ui/core/Card";
 
 const styles = {
-  stack: {
-    width: "100%",
-    maxWidth: 100,
+  card: {
+    padding: 10,
+    boxShadow: "none"
   },
-
-  button: {
-    width: '80%',
-    height: 50,
-    margin: 10,
+  item: {
+    padding: 0
   }
 }
 
@@ -25,18 +23,18 @@ function Links() {
   ];
 
   return (
-    <>
+    <Card style={styles.card}>
       <Title name="Links" />
       {
         links.map( (e) => (
-          <ListItem>
+          <ListItem style={styles.item}>
               <ListItemButton href={e.link}>
                 <ListItemText primary={e.name} secondary={e.link} />
               </ListItemButton>
           </ListItem>
         ))
       }
-    </>
+    </Card>
   );
 }
 

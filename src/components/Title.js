@@ -1,11 +1,9 @@
 import React from 'react';
-
-
+import '../styles/index.css';
 const style =  {
   div: {
   },
   header: {
-    paddingTop: 60,
   }
 
 }

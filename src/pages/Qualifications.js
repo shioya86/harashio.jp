@@ -3,6 +3,14 @@ import * as React from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
+import Card from "@material-ui/core/Card";
+
+const styles = {
+  card: {
+    padding: 10,
+    boxShadow: "none"
+  }
+}
 
 function Qualifications() {
   const rows = [
@@ -13,7 +21,7 @@ function Qualifications() {
     {date: "8.2022", name: "三級知的財産管理技能検定"}
   ]
   return (
-    <div>
+    <Card style={styles.card}>
       <Title name={"Qualifications"} />
       <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper'}}>
         {
@@ -24,7 +32,7 @@ function Qualifications() {
           ))
         }
       </List>
-    </div>
+    </Card>
   );
 }
 

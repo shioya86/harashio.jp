@@ -1,37 +1,26 @@
-import Title from "../components/Title";
 import { Typography } from "@material-ui/core";
+import CardContent from '@material-ui/core/CardContent';
+import Title from "../components/Title";
+import Card from "@material-ui/core/Card";
 
 const styles = {
-  stack: {
-    width: "100%",
-    maxWidth: 100,
-  },
-
-  button: {
-    width: '80%',
-    height: 50,
-    margin: 10,
+  card: {
+    padding: 10,
+    boxShadow: "none"
   }
 }
+
 function Profile() {
-
-
   return (
-    <div>
+    <Card style={styles.card}>
       <Title name={"Profile"}/>
-      <div align="center">
-        <p> shioya / 原 翔耶</p>
-        <p>Shoya HARA</p>
-      </div>
-      <ul>
-        <li> 8.1999 宮崎県 都城市生</li>
-        <li> M1, 九州工業大学 情報創成工学科 在学中</li>
-        <li> shara[at]ml.harashio.jp</li>
-      </ul>
-      <Typography paragraph>
-        こんにちは
-      </Typography>
-    </div>
+      <CardContent>
+        <Typography>
+          shioya / 原 翔耶
+        </Typography>
+      </CardContent>
+
+    </Card>
   );
 }
 
