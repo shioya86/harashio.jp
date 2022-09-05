@@ -26,7 +26,7 @@ function Profile() {
       <ul>
         <li> 8.1999 宮崎県 都城市生</li>
         <li> M1, 九州工業大学 情報創成工学科 在学中</li>
-        <li> admin[at]sp.harashio.jp</li>
+        <li> shara[at]ml.harashio.jp</li>
       </ul>
       <Typography paragraph>
         こんにちは
