@@ -16,10 +16,10 @@ const styles = {
 
 function Links() {
   const links = [
-    {name: "github", link: "https://github.com/shioyarare"},
-    {name: "twitter", link: "https://twitter.com/shioya_net"},
-    {name: "blog", link: "https://blog.harashio.jp"},
-    {name: "atcoder", link: "https://atcoder.jp/users/shioya"}
+    {name: "GitHub", link: "https://github.com/shioyarare"},
+    {name: "Twitter", link: "https://twitter.com/shioya_net"},
+    {name: "shioya's blog", link: "https://blog.harashio.jp"},
+    {name: "AtCoder", link: "https://atcoder.jp/users/shioya"}
   ];
 
   return (
