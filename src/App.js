@@ -42,7 +42,7 @@ const App = (props) => {
               <Links />
             </Grid>
             <Grid item>
-              <Works />
+
             </Grid>
           </Grid>
         </Grid>

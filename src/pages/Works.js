@@ -13,7 +13,7 @@ const styles = {
 function Works() {
   const rows = [
     {title: "プログラムA", body: "これはサンプルです。", link: "https://google.com"},
-    //{title: "プログラムB", body: "これはサンプルです。", link: "https://google.com"},
+    {title: "プログラムB", body: "これはサンプルです。", link: "https://google.com"},
   ];
   return (
     <Card style={styles.card}>
