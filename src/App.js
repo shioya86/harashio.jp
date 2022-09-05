@@ -8,6 +8,11 @@ import History from './pages/History';
 import Works from './pages/Works';
 import Links from './pages/Links';
 
+const styles = {
+  headerDummy: {
+    marginTop: "4em"
+  }
+}
 
 const App = (props) => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -18,7 +23,7 @@ const App = (props) => {
         <Header />
       </Grid>
 
-      <Grid item container>
+      <Grid item container style={styles.headerDummy}>
 
         <Grid sm={2} />
 
