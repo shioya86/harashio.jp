@@ -18,7 +18,7 @@ function Links() {
   const links = [
     {name: "github", link: "https://github.com/shioyarare"},
     {name: "twitter", link: "https://twitter.com/shioya_net"},
-    {name: "blog", link: "https://blog.shioyarare.com"},
+    {name: "blog", link: "https://blog.harashio.jp"},
     {name: "atcoder", link: "https://atcoder.jp/users/shioya"}
   ];
 
