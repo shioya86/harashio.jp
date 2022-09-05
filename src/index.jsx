@@ -13,7 +13,7 @@ const styles = {
     paddingRight: 40,
     height: 80,
     background: "black",
-    textAlign: "right",
+    textAlign: "center",
     color: "white",
   }
 }
@@ -21,7 +21,7 @@ const styles = {
 root.render(
   <React.StrictMode>
     <App />
-    <footer style={styles.footer}> Copyright ©  harashio.jp </footer>
+    <footer style={styles.footer}> Copyright © harashio.jp </footer>
   </React.StrictMode>
 );
 
