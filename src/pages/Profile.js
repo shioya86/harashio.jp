@@ -18,6 +18,9 @@ function Profile() {
         <Typography>
           shioya / 原 翔耶
         </Typography>
+        <Typography>
+          こんにちは。プログラミングとか好きです。
+        </Typography>
       </CardContent>
 
     </Card>
