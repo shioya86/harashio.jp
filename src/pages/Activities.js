@@ -11,7 +11,7 @@ const styles = {
   }
 }
 
-function History() {
+function Activities() {
   const rows =  [
     {date: "6.2017", name: "宮崎ミライ Hack Days", body: "宮崎の観光をテーマにしたハッカソン"},
     {date: "10.2017", name: "全国高専プログラミングコンテスト 第28回大島大会 参加", body: "C++ / OpenCVを用いたパズルソルバの開発"},
@@ -41,4 +41,4 @@ function History() {
 function buildActivity(body, date) {
   return <span>{body} <br /> {date} </span>;
 }
-export default History;
+export default Activities;

@@ -4,7 +4,7 @@ import Header from './components/Header';
 import { Grid } from '@mui/material';
 import Profile from './pages/Profile';
 import Qualifications from './pages/Qualifications';
-import History from './pages/History';
+import Activities from './pages/Activities';
 import Works from './pages/Works';
 import Links from './pages/Links';
 
@@ -36,7 +36,7 @@ const App = (props) => {
               <Qualifications />
             </Grid>
             <Grid item>
-              <History />
+              <Activities />
             </Grid>
             <Grid item>
               <Links />
