@@ -19,7 +19,7 @@ function Profile() {
       <Grid item lg={3} xs={10} style={{textAlign: "center"}}>
         <img src="./sample_profile.jpeg" layout="fill" style={{width: "180px", height: "180px"}} alt="Image" />
       </Grid>
-      <Grid item lg={6} xs={10}>
+      <Grid item lg={7} xs={10}>
         <Typography style={{textAlign: "center"}}>shioya / 原翔耶 (Shoya HARA)</Typography>
         <MyTabs />
       </Grid>

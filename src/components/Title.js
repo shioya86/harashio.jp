@@ -9,9 +9,7 @@ const style =  {
 }
 const Title = (props) => {
   return (
-    <div>
       <h2 id={props.name} style={style.header}> {props.name}</h2>
-    </div>
   );
 };
 

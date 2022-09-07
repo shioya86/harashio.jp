@@ -48,19 +48,19 @@ export default function BasicTabs() {
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" >
           <Tab label="About Me" {...a11yProps(0)} />
           <Tab label="Hobby" {...a11yProps(1)} />
         </Tabs>
       </Box>
-      <TabPanel value={value} index={0} style={{minHeight: "13em"}}>
-        <Typography>
+      <TabPanel value={value} index={0} >
+        <Typography style={{margin: "0px", minHeight: "180px"}}>
           1999.8.16 宮崎県生、霧島酒造(株)の本社があることで有名な都城市に住み地方創成をテーマとしながらハッカソンやアプリ開発などを行なっていました。 <br />
           現在は福岡県、九州工業大学の川原研究室に在籍し無線ネットワークへのDLT活用の研究をする傍ら、アプリ開発のアルバイトをしています。 <br />
         </Typography>
       </TabPanel>
-      <TabPanel value={value} index={1} style={{minHeight: "13em"}}>
-        <Typography>
+      <TabPanel value={value} index={1}>
+        <Typography style={{margin: "0px", minHeight: "180px"}}>
           旅行・BBQ
         </Typography>
       </TabPanel>
