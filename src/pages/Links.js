@@ -19,7 +19,8 @@ function Links() {
     {name: "GitHub", link: "https://github.com/shioyarare"},
     {name: "Twitter", link: "https://twitter.com/shioya_net"},
     {name: "shioya's blog", link: "https://blog.harashio.jp"},
-    {name: "AtCoder", link: "https://atcoder.jp/users/shioya"}
+    {name: "AtCoder", link: "https://atcoder.jp/users/shioya"},
+    {name: "Instagram", link: "https://www.instagram.com/harashioJP"}
   ];
 
   return (
