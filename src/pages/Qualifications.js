@@ -7,6 +7,7 @@ import Card from "@material-ui/core/Card";
 
 const styles = {
   card: {
+    padding: 10,
     boxShadow: "none"
   }
 }
