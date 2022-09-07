@@ -16,7 +16,7 @@ function Profile() {
   return (
     <Card style={styles.card}>
       <Title name={"Profile"} />
-      <Typography style={{textAlign: "center", fontFamily: "'Zen Antique Soft', serif", fontSize: "20px"}}>shioya / 原翔耶 Shoya HARA</Typography>
+      <Typography style={{textAlign: "center", fontFamily: "'Zen Antique Soft', serif", fontSize: "20px"}}>shioya / 原 翔耶 Shoya HARA</Typography>
       <Typography style={{textAlign: "center"}}> shara[at]ml.harashio.jp</Typography>
       <Grid container alignItems="center" justify="center">
       <Grid item lg={3} xs={12} style={{textAlign: "center", paddingTop: "20px", paddingBottom: "20px"}}>
