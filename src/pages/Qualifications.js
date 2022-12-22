@@ -19,7 +19,7 @@ function Qualifications() {
     {date: "3.2020", name: "準学士(工学) - 都城工業高等専門学校"},
     {date: "3.2022", name: "学士(情報工学) - 九州工業大学"},
     {date: "8.2022", name: "三級知的財産管理技能検定"},
-    {date: "2022", name: "応用情報技術者試験書"}
+    {date: "2022", name: "応用情報技術者資格"}
   ]
   return (
     <Card style={styles.card}>
