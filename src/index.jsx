@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
+import Header from "./components/Header";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -18,6 +19,7 @@ const styles = {
 
 root.render(
   <React.StrictMode>
+    <Header />
     <App />
     <footer style={styles.footer}> Copyright © harashio.jp </footer>
   </React.StrictMode>

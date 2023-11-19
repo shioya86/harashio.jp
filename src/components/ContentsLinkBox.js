@@ -8,7 +8,6 @@ import CardContent from "@material-ui/core/CardContent";
 function ContentsLinkBox(props) {
     const {cardTitle, url} = props;
 
-
     const handleClick = () => {
         window.open(url, "_blank");
     }
