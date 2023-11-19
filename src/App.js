@@ -5,8 +5,7 @@ import { Grid } from '@mui/material';
 import Profile from './pages/Profile';
 import Qualifications from './pages/Qualifications';
 import Activities from './pages/Activities';
-import Works from './pages/Works';
-import Links from './pages/Links';
+import ContentsLinkBox from "./components/ContentsLinkBox";
 
 const styles = {
   headerDummy: {
@@ -14,9 +13,7 @@ const styles = {
   }
 }
 
-const App = (props) => {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-
+const App = () => {
   return (
     <Grid container direction="column" spacing={2}>
       <Grid item>
@@ -32,23 +29,26 @@ const App = (props) => {
             <Grid item>
               <Profile />
             </Grid>
+
+            {/* リンク集 */}
+            <Grid container direction="row">
+              <ContentsLinkBox cardTitle="GitHub" url="https://github.com/shioya86/"/>
+              <ContentsLinkBox cardTitle="X(Twitter)" url="https://twitter.com/shioya86/"/>
+              <ContentsLinkBox cardTitle="blog" url="https://blog.harashio.jp/"/>
+              <ContentsLinkBox cardTitle="AtCoder" url="https://atcoder.jp/users/shioya"/>
+              <ContentsLinkBox cardTitle="Problems" url="https://kenkoooo.com/atcoder/#/user/shioya/"/>
+              <ContentsLinkBox cardTitle="Instagram" url="https://instagram.com/harashio.jp/"/>
+            </Grid>
+
             <Grid item>
               <Qualifications />
             </Grid>
             <Grid item>
               <Activities />
             </Grid>
-            <Grid item>
-              <Links />
-            </Grid>
-            <Grid item>
 
-            </Grid>
           </Grid>
         </Grid>
-
-        <Grid sm={2} />
-
       </Grid>
     </Grid>
   );
