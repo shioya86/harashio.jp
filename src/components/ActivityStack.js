@@ -4,21 +4,20 @@ import ArticleIcon from '@mui/icons-material/Article';
 import InventoryIcon from '@mui/icons-material/Inventory';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import MeetingRoomIcon from '@mui/icons-material/MeetingRoom';
-import LinkIcon from '@mui/icons-material/Link';
 import React from "react";
 
 const getIcon = (type) => {
-    if (type === "Hackathon") {
-        return <DirectionsRunIcon/>
-    } else if (type === "Contest") {
-        return <InventoryIcon/>
-    } else if (type === "Reward") {
-        return <ArticleIcon/>
-    } else if (type === "Work") {
-        return <MeetingRoomIcon/>;
-    } else {
-        return <ArticleIcon/>
-    }
+  if (type === "Hackathon") {
+    return <DirectionsRunIcon/>
+  } else if (type === "Contest") {
+    return <InventoryIcon/>
+  } else if (type === "Reward") {
+    return <ArticleIcon/>
+  } else if (type === "Work") {
+    return <MeetingRoomIcon/>;
+  } else {
+    return <ArticleIcon/>
+  }
 }
 
 const makeRewards = (reward) => {
@@ -32,15 +31,9 @@ const makeRewards = (reward) => {
     );
 }
 
-const makeLink = (link) => {
-    return (
-        <LinkIcon/>
-    )
-}
-
 const handleClick = (url) => {
-    if (url === "") return;
-    window.open(url, "_blank");
+  if (url === "") return;
+  window.open(url, "_blank");
 }
 
 function ActivityStack(props) {

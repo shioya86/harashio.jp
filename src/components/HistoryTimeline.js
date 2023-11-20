@@ -1,10 +1,12 @@
 import React from "react";
 import {
     Timeline,
-    TimelineConnector, TimelineContent, timelineContentClasses,
+    TimelineConnector,
+    TimelineContent,
     TimelineDot,
-    TimelineItem, timelineItemClasses,
-    TimelineSeparator
+    TimelineItem,
+    TimelineSeparator,
+    timelineItemClasses
 } from "@mui/lab";
 
 function HistoryTimeline(params) {

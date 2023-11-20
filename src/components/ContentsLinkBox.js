@@ -45,7 +45,7 @@ function ContentsLinkBox(props) {
                 </CardContent>
             </Card>
         </Grid>
-    )
+    );
 }
 
 export default ContentsLinkBox;

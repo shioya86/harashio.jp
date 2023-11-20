@@ -113,88 +113,86 @@ const qualificationContents = [
 const App = () => {
 
   return (
-    <div style={{paddingTop: "10em"}}>
-      <Container maxWidth="sm">
-        {/* 紹介 */}
-        <Card style={{padding: 10}}>
-          <CardContent>
-            <Stack
-                direction="row"
-                divider={<Divider orientation="vertical" flexItem />}
-                justifyContent="center"
-                alignItems="center"
-                spacing={2}
-                sx={{ paddingBottom: "1em" }}
-            >
-              <Avatar
-                  src="https://www.blog.harashio.jp/wp-content/uploads/jZiHvbmc_400x400.jpg"
-                  sx={{ width: "80px", height: "80px" }}
-              />
-              <Avatar
-                  src="https://www.blog.harashio.jp/wp-content/uploads/jZiHvbmc_400x400.jpg"
-                  sx={{ width: "80px", height: "80px" }}
-              />
-            </Stack>
-            <Typography style={{textAlign: "center", fontFamily: "'Zen Antique Soft', serif", fontSize: "20px"}}>
-              shioya86 / 原 翔耶 Shoya HARA
-            </Typography>
-            <Typography style={{ textAlign: "center", paddingBottom: "1em" }}>
-              shara[at]ml.harashio.jp
-            </Typography>
+    <Container maxWidth="sm" style={{ padding: "10em 0 5em 0" }}>
+      {/* 紹介 */}
+      <Card>
+        <CardContent>
+          <Stack
+              direction="row"
+              divider={<Divider orientation="vertical" flexItem />}
+              justifyContent="center"
+              alignItems="center"
+              spacing={2}
+              sx={{ paddingBottom: "1em" }}
+          >
+            <Avatar
+                src="https://www.blog.harashio.jp/wp-content/uploads/jZiHvbmc_400x400.jpg"
+                sx={{ width: "80px", height: "80px" }}
+            />
+            <Avatar
+                src="https://www.blog.harashio.jp/wp-content/uploads/jZiHvbmc_400x400.jpg"
+                sx={{ width: "80px", height: "80px" }}
+            />
+          </Stack>
+          <Typography style={{textAlign: "center", fontFamily: "'Zen Antique Soft', serif", fontSize: "20px"}}>
+            shioya86 / 原 翔耶 Shoya HARA
+          </Typography>
+          <Typography style={{ textAlign: "center", paddingBottom: "1em" }}>
+            shara[at]ml.harashio.jp
+          </Typography>
 
 
-            <Typography>
-              福岡県で学生をしながらプログラミングで遊んでいる大学院生です。
-              現在は、競プロをしたりTangleという分散台帳技術の活用に関する研究をしたりしています。
-            </Typography>
-          </CardContent>
-        </Card>
+          <Typography>
+            福岡県で学生をしながらプログラミングで遊んでいる大学院生です。
+            現在は、競プロをしたりTangleという分散台帳技術の活用に関する研究をしたりしています。
+          </Typography>
+        </CardContent>
+      </Card>
 
-        {/* リンク集 */}
-        <Card>
-          <CardContent>
-            <Title name={"Links"} />
+      {/* リンク集 */}
+      <Card>
+        <CardContent>
+          <Title name={"Links"} />
 
-            <Grid container direction="row">
-              {
-                linksContents.map((elem) =>
-                    <ContentsLinkBox
-                        id={elem.id}
-                        cardTitle={elem.title}
-                        url={elem.url}
-                    />
-                )
-              }
-            </Grid>
-          </CardContent>
-        </Card>
+          <Grid container direction="row">
+            {
+              linksContents.map((elem) =>
+                  <ContentsLinkBox
+                      id={elem.id}
+                      cardTitle={elem.title}
+                      url={elem.url}
+                  />
+              )
+            }
+          </Grid>
+        </CardContent>
+      </Card>
 
 
-        {/* 履歴 */}
-        <Card>
-          <CardContent>
-            <Title name={"History"} />
-            <HistoryTimeline data={historyContents}/>
-          </CardContent>
-        </Card>
+      {/* 履歴 */}
+      <Card>
+        <CardContent>
+          <Title name={"History"} />
+          <HistoryTimeline data={historyContents}/>
+        </CardContent>
+      </Card>
 
-        {/* 活動 */}
-        <Card>
-          <CardContent>
-            <Title name={"Activities"} />
-            <ActivityStack data={activityContents}/>
-          </CardContent>
-        </Card>
+      {/* 活動 */}
+      <Card>
+        <CardContent>
+          <Title name={"Activities"} />
+          <ActivityStack data={activityContents}/>
+        </CardContent>
+      </Card>
 
-        {/* 資格 */}
-        <Card>
-          <CardContent>
-            <Title name={"Qualifications"} />
-            <QualificationDataGrid data={qualificationContents}/>
-          </CardContent>
-        </Card>
-      </Container>
-    </div>
+      {/* 資格 */}
+      <Card>
+        <CardContent>
+          <Title name={"Qualifications"} />
+          <QualificationDataGrid data={qualificationContents}/>
+        </CardContent>
+      </Card>
+    </Container>
   );
 }
 
