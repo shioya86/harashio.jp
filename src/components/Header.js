@@ -15,7 +15,7 @@ function Header() {
   return (
     <AppBar position="static" style={styles.header}>
       <Toolbar>
-        <Typography>Shioya's Portfolio</Typography>
+        <Typography>Shioya86's Portfolio</Typography>
       </Toolbar>
     </AppBar>
   )
