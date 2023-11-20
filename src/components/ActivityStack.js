@@ -56,12 +56,22 @@ function ActivityStack(props) {
                                {elem.title}
                            </Typography>
 
-                           <Stack direction="row">
-                               <Typography
-                                   sx={{ backgroundColor: "#000000", color: "#FFFFFF", padding: "0 5px 0 5px" }}
-                               >
-                                   { elem.date }
-                               </Typography>
+                           <Stack direction={{ xs: "column", sm: "row" }}>
+                               <div>
+                                   <Typography
+                                       sx={{
+                                           backgroundColor: "#000000",
+                                           color: "#FFFFFF",
+                                           padding: "0 5px 0 5px",
+                                           fontSize: ".8em",
+                                           display: "inline-block"
+                                   }}
+                                   >
+
+                                       { elem.date }
+                                   </Typography>
+                               </div>
+
                                {
                                    elem.rewards.map((reward) =>
                                        makeRewards(reward)
