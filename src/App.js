@@ -23,7 +23,7 @@ const historyContents = [
   { id: 2, title: "都城工業高等専門学校 電気情報工学科 卒業", date: "2020.3"},
   { id: 3, title: "九州工業大学 情報工学部 情報・通信工学科 入学", date: "2020.4"},
   { id: 4, title: "九州工業大学 情報工学部 情報・通信工学科 卒業", date: "2022.3"},
-  { id: 5, title: "九州工業大学大学院情報工学府 情報創生工学科 入学", date: "2022.4"},
+  { id: 5, title: "九州工業大学大学院情報工学府 情報創成工学科 入学", date: "2022.4"},
 ];
 
 // 活動
@@ -151,9 +151,10 @@ const App = () => {
         </Card>
 
         {/* リンク集 */}
-        <Title name={"Links"} />
         <Card>
           <CardContent>
+            <Title name={"Links"} />
+
             <Grid container direction="row">
               {
                 linksContents.map((elem) =>
@@ -170,25 +171,25 @@ const App = () => {
 
 
         {/* 履歴 */}
-        <Title name={"History"} />
         <Card>
           <CardContent>
+            <Title name={"History"} />
             <HistoryTimeline data={historyContents}/>
           </CardContent>
         </Card>
 
         {/* 活動 */}
-        <Title name={"Activities"} />
         <Card>
           <CardContent>
+            <Title name={"Activities"} />
             <ActivityStack data={activityContents}/>
           </CardContent>
         </Card>
 
         {/* 資格 */}
-        <Title name={"Qualifications"} />
         <Card>
           <CardContent>
+            <Title name={"Qualifications"} />
             <QualificationDataGrid data={qualificationContents}/>
           </CardContent>
         </Card>
