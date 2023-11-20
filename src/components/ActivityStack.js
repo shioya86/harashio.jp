@@ -64,8 +64,9 @@ function ActivityStack(props) {
                                            color: "#FFFFFF",
                                            padding: "0 5px 0 5px",
                                            fontSize: ".8em",
-                                           display: "inline-block"
-                                   }}
+                                           display: "inline-block",
+                                           marginRight: ".5em",
+                                       }}
                                    >
 
                                        { elem.date }

@@ -8,6 +8,7 @@ import {
     TimelineSeparator,
     timelineItemClasses
 } from "@mui/lab";
+import {Typography} from "@mui/material";
 
 function HistoryTimeline(params) {
     const {data} = params;
@@ -29,9 +30,18 @@ function HistoryTimeline(params) {
                             <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent>
-                            <span style={{color: "#FFFFFF", backgroundColor: "#000000", padding: 3, margin: 3}}>
+                            <Typography
+                                sx={{
+                                    backgroundColor: "#000000",
+                                    color: "#FFFFFF",
+                                    padding: "0 5px 0 5px",
+                                    fontSize: ".8em",
+                                    display: "inline-block",
+                                    marginRight: ".5em",
+                                }}
+                            >
                                 {elem.date}
-                            </span>
+                            </Typography>
                             {elem.title}
                         </TimelineContent>
                     </TimelineItem>

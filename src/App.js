@@ -19,11 +19,11 @@ const linksContents = [
 ]
 // 来歴
 const historyContents = [
-  { id: 1, title: "都城工業高等専門学校 電気情報工学科 入学", date: "2015.4"},
-  { id: 2, title: "都城工業高等専門学校 電気情報工学科 卒業", date: "2020.3"},
-  { id: 3, title: "九州工業大学 情報工学部 情報・通信工学科 入学", date: "2020.4"},
-  { id: 4, title: "九州工業大学 情報工学部 情報・通信工学科 卒業", date: "2022.3"},
-  { id: 5, title: "九州工業大学大学院情報工学府 情報創成工学科 入学", date: "2022.4"},
+  { id: 1, title: "都城工業高等専門学校 電気情報工学科 入学", date: "2015.04"},
+  { id: 2, title: "都城工業高等専門学校 電気情報工学科 卒業", date: "2020.03"},
+  { id: 3, title: "九州工業大学 情報工学部 情報・通信工学科 入学", date: "2020.04"},
+  { id: 4, title: "九州工業大学 情報工学部 情報・通信工学科 卒業", date: "2022.03"},
+  { id: 5, title: "九州工業大学大学院情報工学府 情報創成工学科 入学", date: "2022.04"},
 ];
 
 // 活動
@@ -34,7 +34,7 @@ const activityContents = [
     type: "Hackathon",
     description: "宮崎の観光をテーマにしたハッカソン",
     url: "https://connpass.com/event/57371/",
-    date: "2017.6",
+    date: "2017.06",
     rewards: []
   },
   {
@@ -61,7 +61,7 @@ const activityContents = [
     type: "Work",
     description: "Azureを使ったBotサービスの開発",
     url: "",
-    date: "2018.3",
+    date: "2018.03",
     rewards: []
   },
   {
@@ -70,7 +70,7 @@ const activityContents = [
     type: "Work",
     description: "水処理システム設計および研修",
     url: "",
-    date: "2018.9",
+    date: "2018.09",
     rewards: []
   },
   {
@@ -111,89 +111,87 @@ const qualificationContents = [
 ];
 
 const App = () => {
+    return (
+        <Container maxWidth="sm" style={{ padding: "10em 0 5em 0" }}>
+            {/* 紹介 */}
+            <Card>
+                <CardContent>
+                    <Stack
+                        direction="row"
+                        divider={<Divider orientation="vertical" flexItem />}
+                        justifyContent="center"
+                        alignItems="center"
+                        spacing={2}
+                        sx={{ paddingBottom: "1em" }}
+                    >
+                        <Avatar
+                            src="https://www.blog.harashio.jp/wp-content/uploads/jZiHvbmc_400x400.jpg"
+                            sx={{ width: "80px", height: "80px" }}
+                        />
+                        <Avatar
+                            src="https://www.blog.harashio.jp/wp-content/uploads/jZiHvbmc_400x400.jpg"
+                            sx={{ width: "80px", height: "80px" }}
+                        />
+                    </Stack>
+                    <Typography style={{textAlign: "center", fontFamily: "'Zen Antique Soft', serif", fontSize: "20px"}}>
+                        shioya86 / 原 翔耶 Shoya HARA
+                    </Typography>
+                    <Typography style={{ textAlign: "center", paddingBottom: "1em" }}>
+                        shara[at]ml.harashio.jp
+                    </Typography>
 
-  return (
-    <Container maxWidth="sm" style={{ padding: "10em 0 5em 0" }}>
-      {/* 紹介 */}
-      <Card>
-        <CardContent>
-          <Stack
-              direction="row"
-              divider={<Divider orientation="vertical" flexItem />}
-              justifyContent="center"
-              alignItems="center"
-              spacing={2}
-              sx={{ paddingBottom: "1em" }}
-          >
-            <Avatar
-                src="https://www.blog.harashio.jp/wp-content/uploads/jZiHvbmc_400x400.jpg"
-                sx={{ width: "80px", height: "80px" }}
-            />
-            <Avatar
-                src="https://www.blog.harashio.jp/wp-content/uploads/jZiHvbmc_400x400.jpg"
-                sx={{ width: "80px", height: "80px" }}
-            />
-          </Stack>
-          <Typography style={{textAlign: "center", fontFamily: "'Zen Antique Soft', serif", fontSize: "20px"}}>
-            shioya86 / 原 翔耶 Shoya HARA
-          </Typography>
-          <Typography style={{ textAlign: "center", paddingBottom: "1em" }}>
-            shara[at]ml.harashio.jp
-          </Typography>
+                    <Typography>
+                        福岡県で学生をしながらプログラミングで遊んでいる大学院生です。
+                        現在は、競プロをしたりTangleという分散台帳技術の活用に関する研究をしたりしています。
+                    </Typography>
+               </CardContent>
+            </Card>
 
+            {/* リンク集 */}
+            <Card>
+                <CardContent>
+                    <Title name={"Links"} />
 
-          <Typography>
-            福岡県で学生をしながらプログラミングで遊んでいる大学院生です。
-            現在は、競プロをしたりTangleという分散台帳技術の活用に関する研究をしたりしています。
-          </Typography>
-        </CardContent>
-      </Card>
-
-      {/* リンク集 */}
-      <Card>
-        <CardContent>
-          <Title name={"Links"} />
-
-          <Grid container direction="row">
-            {
-              linksContents.map((elem) =>
-                  <ContentsLinkBox
-                      id={elem.id}
-                      cardTitle={elem.title}
-                      url={elem.url}
-                  />
-              )
-            }
-          </Grid>
-        </CardContent>
-      </Card>
+                    <Grid container direction="row">
+                         {
+                             linksContents.map((elem) =>
+                                 <ContentsLinkBox
+                                     id={elem.id}
+                                     cardTitle={elem.title}
+                                     url={elem.url}
+                                 />
+                             )
+                         }
+                    </Grid>
+                </CardContent>
+            </Card>
 
 
-      {/* 履歴 */}
-      <Card>
-        <CardContent>
-          <Title name={"History"} />
-          <HistoryTimeline data={historyContents}/>
-        </CardContent>
-      </Card>
+            {/* 履歴 */}
+            <Card>
+              <CardContent>
+                <Title name={"History"} />
+                <HistoryTimeline data={historyContents}/>
+              </CardContent>
+            </Card>
 
-      {/* 活動 */}
-      <Card>
-        <CardContent>
-          <Title name={"Activities"} />
-          <ActivityStack data={activityContents}/>
-        </CardContent>
-      </Card>
+            {/* 活動 */}
+            <Card>
+              <CardContent>
+                <Title name={"Activities"} />
+                <ActivityStack data={activityContents}/>
+              </CardContent>
+            </Card>
 
-      {/* 資格 */}
-      <Card>
-        <CardContent>
-          <Title name={"Qualifications"} />
-          <QualificationDataGrid data={qualificationContents}/>
-        </CardContent>
-      </Card>
-    </Container>
-  );
+            {/* 資格 */}
+            <Card>
+                <CardContent>
+                    <Title name={"Qualifications"} />
+                    <QualificationDataGrid data={qualificationContents}/>
+                </CardContent>
+            </Card>
+        </Container>
+   );
 }
 
 App.propTypes = {
