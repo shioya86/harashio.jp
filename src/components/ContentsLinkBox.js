@@ -1,8 +1,7 @@
-import {Grid, Typography, CardMedia} from "@mui/material";
+import {Grid, Typography, CardMedia, Stack} from "@mui/material";
 import React from "react";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
-
 
 
 function ContentsLinkBox(props) {
@@ -26,22 +25,34 @@ function ContentsLinkBox(props) {
                 }}
             >
                 <CardContent>
-                    <CardMedia
-                        sx={{ height: 80, width: 80, borderRadius: "40%"}}
-                        image="https://www.blog.harashio.jp/wp-content/uploads/jZiHvbmc_400x400.jpg"
-                        onClick={handleClick}
-                        style={{
-                            cursor: "pointer"
-                        }}
-                    />
-                    <Typography
-                        level="title-lg"
-                        overflow="hidden"
-                        textOverflow="ellipsis"
-                        whiteSpace="nowrap"
+                    <Stack
+                        direction="column"
+                        alignItems="center"
+                        justify="center"
                     >
-                        {cardTitle}
-                    </Typography>
+                        <CardMedia
+                            sx={{ height: 80, width: 80, borderRadius: "40%"}}
+                            image="https://www.blog.harashio.jp/wp-content/uploads/jZiHvbmc_400x400.jpg"
+                            onClick={handleClick}
+                            style={{
+                                cursor: "pointer",
+                            }}
+                        />
+                        <Typography
+                            level="title-lg"
+                            overflow="hidden"
+                            textOverflow="ellipsis"
+                            whiteSpace="nowrap"
+                            noWrap
+                            style={{
+                                display: "block",
+                                fontSize: ".8em",
+                                width: "80px",
+                            }}
+                        >
+                            {cardTitle}
+                        </Typography>
+                    </Stack>
                 </CardContent>
             </Card>
         </Grid>

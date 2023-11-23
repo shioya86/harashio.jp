@@ -10,12 +10,13 @@ import HistoryTimeline from "./components/HistoryTimeline";
 import ActivityStack from "./components/ActivityStack";
 
 const linksContents = [
-  { id: 1, title: "GitHub", url: "https://github.com/shioya86/" },
-  { id: 2, title: "X(Twitter)", url: "https://twitter.com/shioya86/" },
-  { id: 3, title: "blog", url: "https://blog.harashio.jp/" },
-  { id: 4, title: "AtCoder", url: "https://atcoder.jp/users/shioya" },
-  { id: 5, title: "Problems", url: "https://kenkoooo.com/atcoder/#/user/shioya/" },
-  { id: 6, title: "Instagram", url: "https://instagram.com/harashio.jp/" },
+    { id: 1, title: "GitHub", url: "https://github.com/shioya86/" },
+    { id: 2, title: "X(Twitter)", url: "https://twitter.com/shioya86/" },
+    { id: 3, title: "blog", url: "https://blog.harashio.jp/" },
+    { id: 4, title: "AtCoder", url: "https://atcoder.jp/users/shioya" },
+    { id: 5, title: "AtCoderProblems", url: "https://kenkoooo.com/atcoder/#/user/shioya/" },
+    { id: 6, title: "Instagram", url: "https://instagram.com/harashio.jp/" },
+    { id: 7, title: "sizu.me", url: "https://sizu.me/shioya86" },
 ]
 // 来歴
 const historyContents = [
@@ -154,7 +155,7 @@ const App = () => {
 
                     <Grid container direction="row">
                          {
-                             linksContents.map((elem) =>
+                             linksContents.map((elem: {id: Number, title: String, url: String}) =>
                                  <ContentsLinkBox
                                      id={elem.id}
                                      cardTitle={elem.title}
